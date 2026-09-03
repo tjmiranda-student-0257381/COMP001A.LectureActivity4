@@ -3,7 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tables</title>
   </head>
-  <body></body>
+  <body>
+    <!--header element with a nav element and an unordered list with 4 list items-->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" target="_self" caption="Home">Home</a>
+          </li>
+          <li>
+            <a href="tables.html" target="_self" caption="Tables">Tables</a>
+          </li>
+          <li>
+            <a href="forms.html" target="_self" caption="Forms">Forms</a>
+          </li>
+          <li>
+            <a href="media.html" target="_self" caption="Media">Media</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--div container for building tables with fixed size-->
+      <div id="table1">
+        <!--table with fixed size-->
+        <table style="width: 1000px">
+          <caption>
+            Table with a absolute values
+          </caption>
+          <!--Table header-->
+          <thead>
+            <!-- table row for the header-->
+            <tr>
+              <!-- table header cells-->
+              <th>Header 1</th>
+              <th>Header 2</th>
+            </tr>
+          </thead>
+          <!--Table body-->
+          <tbody>
+            <!-- table row for the body-->
+            <tr>
+              <!-- table data cells-->
+              <td>Data 1.1</td>
+              <td>Data 1.2</td>
+            </tr>
+            <tr>
+              <td>Data 2.1</td>
+              <td>Data 2.2</td>
+            </tr>
+            <tr>
+              <td>Data 3.1</td>
+              <td>Data 3.2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr />
+      <!--div container for building responsive tables-->
+      <div id="table2">
+        <table style="100%">
+          <caption>
+            Responsive table using relative width values
+          </caption>
+          <!--Table header-->
+          <thead>
+            <!-- table row for the header-->
+            <tr>
+              <!-- table header cells-->
+              <th>Header 1</th>
+              <th>Header 2</th>
+            </tr>
+          </thead>
+          <!--Table body-->
+          <tbody>
+            <!-- table row for the body-->
+            <tr>
+              <!-- table data cells-->
+              <td>Data 1.1</td>
+              <td>Data 1.2</td>
+            </tr>
+            <tr>
+              <td>Data 2.1</td>
+              <td>Data 2.2</td>
+            </tr>
+            <tr>
+              <td>Data 3.1</td>
+              <td>Data 3.2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr />
+      <!--div container for building responsive tables with merged cells-->
+      <div id="table3">
+        <!--responsive table with merged cells-->
+        <table style="100%">
+          <caption>
+            Responsive table with merged cells
+          </caption>
+          <!--Table header-->
+          <thead>
+            <!-- table row for the header-->
+            <tr>
+              <th rowspan="2">Header 1</th>
+              <!-- header cell that spans 2 rows vertically -->
+              <th colspan="2">Header 2</th>
+              <!-- header cell that spans 2 columns horizontally -->
+            </tr>
+            <tr>
+              <th>Sub-header 1</th>
+              <th>Sub-header 2</th>
+            </tr>
+          </thead>
+          <!--Table body-->
+          <tbody>
+            <!-- table row for the body-->
+            <tr>
+              <!-- table data cells-->
+              <td>Data 1.1</td>
+              <td>Data 1.2</td>
+              <td>Data 1.3</td>
+            </tr>
+            <tr>
+              <td>Data 2.1</td>
+              <td>Data 2.2</td>
+              <td>Data 2.3</td>
+            </tr>
+            <tr>
+              <td>Data 3.1</td>
+              <td>Data 3.2</td>
+              <td>Data 3.3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <!--footer content typically goes here-->
+      <p>
+        &copy; Copyright 20260 TJ Miranda |
+        <a href="https://github.com/tjmiranda-student-0257381" target="_blank"
+          >My GitHub</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
