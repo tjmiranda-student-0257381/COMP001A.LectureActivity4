@@ -3,7 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Forms</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" target="_self" caption="Home">Home</a>
+          </li>
+          <li>
+            <a href="tables.html" target="_self" caption="Tables">Tables</a>
+          </li>
+          <li>
+            <a href="forms.html" target="_self" caption="Forms">Forms</a>
+          </li>
+          <li>
+            <a href="media.html" target="_self" caption="Media">Media</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Forms</h1>
+    </header>
+    <main>
+      <!--beggining of the form element-->
+      <form action="Submit" ; method="post">
+        <!--label and text input field-->
+        <label for="username">Username:</label>
+        <!--input field for the first name-->
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+        />
+        <br />
+        <!--label and password input field-->
+        <label for="password">Password:</label>
+        <!--input field for the password-->
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+        <br />
+        <!--label and email input field-->
+        <label for="email">Email:</label>
+        <!--input field for the email-->
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+        />
+        <br />
+        <!--label and number input field-->
+        <label for="age">Age:</label>
+        <!--input field for the age-->
+        <input type="number" id="age" name="age" min="1" max="100" />
+        <br />
+        <!--radio buttons for gender selection-->
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <br />
+        <!--checkbox for newsletter subscription-->
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+        <br />
+        <!--dropdown select for country selection-->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <!--... other options ... -->
+        </select>
+        <br />
+        <!--text area for additional comments-->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br />
+        <!--file input for uploading files-->
+        <label for="file">Upload your photo:</label>
+        <input type="file" id="file" name="file" />
+        <br />
+        <!--hidden input field (not visible to users-->
+        <input type="hidden" name="userId" value="12345" />
+        <br />
+        <!--range input for selecting a value within a range-->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="10" />
+        <br />
+        <!--data input for selecting date-->4
+        <label for="birthdate">Birth Date:</label>
+        <input type="date" id="birthdate" name="birthdate" />
+        <br />
+        <!--color input for selecting a color-->
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor" />
+        <br />
+        <!--submit button to submit the form-->
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+      <!--end of the form element-->
+    </main>
+    <footer>
+      <!--footer content typically goes here-->
+      <p>
+        &copy; Copyright 20260 TJ Miranda |
+        <a href="https://github.com/tjmiranda-student-0257381" target="_blank"
+          >My GitHub</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
