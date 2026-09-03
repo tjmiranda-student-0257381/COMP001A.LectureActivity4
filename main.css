@@ -4,6 +4,14 @@ body {
     font-family: sans-serif;
     padding: 1em;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*this ensures the footer is at the bottom of the page even if there is not enough content to fill the page*/
+    margin: 0;
+}
+
+main {
+    flex: 1; /*this ensures the main content area takes up all available space, pushing the footer to the bottom of the page*/
 }
 
 h1 {    
